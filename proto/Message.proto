@@ -1,0 +1,10 @@
+message StoreRequest {
+    required uint32 op_type = 1;
+    required string key = 2;
+    optional string value = 3;
+}
+
+message StoreResponse {
+    required uint32 ret_type = 1;
+    optional string value = 2;
+}
